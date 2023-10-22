@@ -1,0 +1,44 @@
+/* src/components/PledgeWall.css */
+
+.pledge-wall {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pledge-wall h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .pledge-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .pledge-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pledge-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .pledge-card .category {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .pledge-cards {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  }
+  
